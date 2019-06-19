@@ -15,12 +15,12 @@ func QuickSort() {
 	qq[4] = 9
 	qq[5] = 3
 	qq[6] = 4
-	qq[7] = 5
-	qq[8] = 10
+	qq[7] = 5 // fmt.Print(strconv.Itoa(i) + ":")
+	qq[8] = 1
 	qq[9] = 8
 	qq[10] = 11
 	qq[11] = 7
-
+	// fmt.Print(strconv.Itoa(i) + ":")
 	for i := 0; i < len(qq); i++ {
 		// fmt.Print(strconv.Itoa(i) + ":")
 		fmt.Print(qq[i])
@@ -32,14 +32,13 @@ func QuickSort() {
 	QuickSort2(0, 11)
 
 	for i := 0; i < len(qq); i++ {
-		// fmt.Print(strconv.Itoa(i) + ":")
 		fmt.Print(qq[i])
 		fmt.Print("  ")
 	}
 }
 
 func QuickSort2(left int, right int) {
-	if left > right {
+	if left > right { // fmt.Print(strconv.Itoa(i) + ":")
 		return
 	}
 
@@ -55,7 +54,7 @@ func QuickSort2(left int, right int) {
 			i++
 		}
 		t := qq[i]
-		qq[i] = qq[j]
+		qq[i] = qq[j] // fmt.Print(strconv.Itoa(i) + ":")
 		qq[j] = t
 	}
 

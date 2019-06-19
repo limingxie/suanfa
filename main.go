@@ -1,9 +1,11 @@
 package main
 
-import "testCode/suanfa/tsort"
+import "testCode/suanfa/tqueue"
 
 func main() {
 	// tsort.BucketSort()
 	// tsort.BubbleSort1()
-	tsort.QuickSort()
+	// tsort.QuickSort()
+	// tqueue.Queuefunc()
+	tqueue.Stackfunc()
 }
