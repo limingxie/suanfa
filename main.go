@@ -1,7 +1,9 @@
 package main
 
+import "testCode/suanfa/tsort"
+
 func main() {
-	// BucketSort()
-	// BubbleSort1()
-	QuickSort()
+	// tsort.BucketSort()
+	// tsort.BubbleSort1()
+	tsort.QuickSort()
 }
