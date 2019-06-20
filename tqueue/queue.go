@@ -2,6 +2,7 @@ package tqueue
 
 import "fmt"
 
+//队列
 type queue struct {
 	data map[int]int
 	head int

@@ -6,6 +6,7 @@ import (
 
 var qq map[int]int
 
+//快速排序
 func QuickSort() {
 	qq = make(map[int]int)
 	qq[0] = 6

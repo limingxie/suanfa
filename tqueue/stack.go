@@ -2,11 +2,12 @@ package tqueue
 
 import "fmt"
 
+//堆栈
 func Stackfunc() {
-	var aa string = "hahahahah"
-	// var bb string = "hahahaha"
+	var aa string = "hahahahahah"
+	var bb string = "hahahaha"
 	Stackfunc1(aa)
-	// Stackfunc1(bb)
+	Stackfunc1(bb)
 }
 
 func Stackfunc1(a string) {
@@ -14,44 +15,33 @@ func Stackfunc1(a string) {
 	for i := range a {
 		str[i] = a[i]
 	}
-	fmt.Println(str)
 
-	leng := len(str)
-	mid := leng/2 - 1
+	strLen := len(str)
+	mid := strLen / 2
 
 	s := make(map[int]byte)
-	for i := 0; i <= mid; i++ {
+	for i := 0; i <= mid-1; i++ {
 		s[i] = str[i]
 	}
 	top := len(s)
-	fmt.Println(s)
-
-	// for i := 0; i < len(s); i++ {
-	// 	fmt.Print(s[i])+ 1
-	// 	fmt.Print("  ")
-	// }
-	// fmt.Println("")
-	// fmt.Println("---------------------------------------")
 
 	var next int
-	if leng%2 == 0 {
+	if strLen%2 == 0 {
 		next = mid
 	} else {
 		next = mid + 1
 	}
-	fmt.Println(next)
 
-	for i := next; i < mid; i++ {
-		if s[top] != str[i] {
+	for i := next; i < strLen; i++ {
+		if s[top-1] != str[i] {
 			break
 		}
 		top--
 	}
-	fmt.Println(top)
+
 	if top == 0 {
 		fmt.Println("YES")
 	} else {
 		fmt.Println("NO")
 	}
-
 }
