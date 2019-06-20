@@ -1,8 +1,6 @@
 package main
 
-import (
-	"testCode/suanfa/tenum"
-)
+import "testCode/suanfa/tsearch"
 
 func main() {
 	// tsort.BucketSort()
@@ -14,6 +12,6 @@ func main() {
 	// tenum.Enum1()
 	// tenum.Enum_huochai()
 	// fmt.Println(tenum.Enum3(171))
-	tenum.Enum4()
-
+	// tenum.Enum4()
+	tsearch.DFS()
 }
