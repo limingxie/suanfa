@@ -2,7 +2,6 @@ package tenum
 
 import (
 	"fmt"
-	"strconv"
 )
 
 //枚举
@@ -70,24 +69,12 @@ func Enum1() {
 	fmt.Println(total / 2)
 }
 
-func AAA() {
+func Enum4() {
+	Enum5(4)
+}
 
-	book := make(map[int]int)
-	for i := 1; i < 10; i++ {
-		book[i] = 1
-	}
-
-	// fmt.Println(book)
-	for j := 1; j < 3; j++ {
-		fmt.Println("===========j[" + strconv.Itoa(j) + "]============")
-		for i := range book {
-			if book[i] != 1 {
-				break
-			} else {
-				fmt.Println("===========book[" + strconv.Itoa(i) + "]============")
-				fmt.Println(book[i])
-
-			}
-		}
+func Enum5(x int) {
+	if x == 0 {
+		return
 	}
 }

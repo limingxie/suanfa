@@ -1,6 +1,8 @@
 package main
 
-import "testCode/suanfa/tenum"
+import (
+	"testCode/suanfa/tenum"
+)
 
 func main() {
 	// tsort.BucketSort()
@@ -9,5 +11,9 @@ func main() {
 	// tqueue.Queuefunc()
 	// tqueue.Stackfunc()
 	// tqueue.LinkedListFunc()
-	tenum.Enum1()
+	// tenum.Enum1()
+	// tenum.Enum_huochai()
+	// fmt.Println(tenum.Enum3(171))
+	tenum.Enum4()
+
 }
