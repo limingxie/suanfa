@@ -2,7 +2,7 @@ package tsearch
 
 import "fmt"
 
-var n int = 4
+var n int = 5
 var aa map[int]int
 var book map[int]int
 

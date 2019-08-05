@@ -30,3 +30,20 @@ func BubbleSort1() {
 
 	fmt.Println(aa)
 }
+
+//泡沫排序
+func BubbleSort() {
+	data := []int{8, 100, 99, 50, 22, 15, 16, 2, 99, 1000, 999, 1}
+
+	for i := 0; i < len(data); i++ {
+		for j := 0; j < len(data)-i; j++ {
+			if data[j] > data[j+1] {
+				v := data[j]
+				data[j] = data[j+1]
+				data[j+1] = v
+			}
+		}
+	}
+
+	fmt.Println(data)
+}
