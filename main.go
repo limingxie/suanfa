@@ -7,7 +7,7 @@ func main() {
 	// tsort.SelectionSort()
 	// tsort.InsertionSort()
 	// tsort.ShellSort1()
-	tsort.MergeSort()
+	tsort.QuickSort_b()
 	// tsort.BubbleSort1()
 	// tsort.QuickSort()
 	// tqueue.Queuefunc()
