@@ -66,25 +66,17 @@ func quickSort_a3(a []int, left int, right int) {
 	if left >= right {
 		return
 	}
-
 	explodeIndex := left
-
 	for i := left + 1; i <= right; i++ {
-
 		if a[left] >= a[i] {
-
 			//分割位定位++
 			explodeIndex++
 			a[i], a[explodeIndex] = a[explodeIndex], a[i]
-
 		}
-
 	}
-
 	//起始位和分割位
 	a[left], a[explodeIndex] = a[explodeIndex], a[left]
 
 	quickSort_a3(a, left, explodeIndex-1)
 	quickSort_a3(a, explodeIndex+1, right)
-
 }
